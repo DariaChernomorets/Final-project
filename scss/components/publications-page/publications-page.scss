@@ -1,0 +1,49 @@
+.publications__page{
+  padding-top: 180px;
+
+    &-wrapper{
+      padding-top: 30px;
+      background-color: $bg-light;
+
+    }
+
+.row {
+  justify-content: space-between;
+  gap: 30px;
+
+}
+  &-item{
+    border-radius: $default-border-radius;
+    background-color: $white-color;
+    overflow: hidden;
+    width: calc(33% - 30px);
+  }
+
+  &-btns{
+  max-width: 235px;
+  margin: 0 auto 30px;
+  position: initial;
+
+    label{
+      font-size: $font-sm;
+      color: $dark-blue-color;
+      font-weight: $font-bold;
+    }
+  }
+
+  &-link{
+    margin: 0 auto 30px;
+
+    a{
+      padding: 18px 30px;
+      color: $white-color;
+      font-size: $font-sm;
+      font-weight: $font-bold;
+
+      &:hover{
+        color: $white-color;
+        background-color: #0085FF;
+      }
+    }
+  }
+}

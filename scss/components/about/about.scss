@@ -1,0 +1,139 @@
+.about{
+  padding-top: 180px;
+
+  &__numbers{
+    margin-bottom: 60px;
+    &-text{
+      h1{
+        @extend %page-header;
+        @extend %gradient-text-dark;
+        margin-bottom: 28px;
+      }
+
+      p{
+        color: #000000;
+
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &-icons{
+
+       ul {
+        list-style: none;
+        border-left: $border-divider;
+
+        li {
+            &:not(:last-child){
+              margin-bottom: 40px;
+            }
+
+
+        h2 {
+          @extend %gradient-text-dark;
+          font-size: calc(#{$font-xxl} - 2px);
+          font-weight: $font-bold;
+          margin-left: 8px;
+        }
+
+          p{
+            font-size: $font-sm;
+          }
+      }
+      }
+
+    }
+  }
+
+  &__banner{
+    background-image: url("../assets/team.svg");
+    width: 100vw;
+    min-height: 584px;
+    @extend %bg-image;
+    border-radius: 0;
+    margin-bottom: 60px;
+
+    h2{
+      font-size: 96px;
+      font-weight: $font-bold;
+      color: #FFFFFF;
+      opacity: 0.8;
+      text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+      letter-spacing: 63px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__description{
+    margin-bottom:$mb-default;
+    &-text {
+      p {
+        color: #000000;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+      &-aim{
+        padding-right: 60px;
+        h2{
+          @extend %gradient-text-dark;
+          @extend %page-header;
+          line-height: 46px;
+        }
+      }
+    }
+
+  &__achievements{
+
+    background-color: $bg-light;
+
+        &-wrapper{
+          padding: 30px 0 90px;
+          border-bottom: 2px solid $mobile-menu-item-active-bg-color;
+        }
+
+    h3{
+      font-weight: $font-bold;
+      font-size: $font-xs;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $dark-blue-color;
+      margin-bottom: 30px;
+    }
+
+    .carousel{
+
+
+
+      &-item{
+
+        .row{
+          flex-wrap: nowrap;
+          --bs-gutter-x:24px;
+        }
+
+        &-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: calc(25% - 40px);
+          height: 110px;
+          background-color: $white-color;
+          border-radius: $default-border-radius;
+          overflow: hidden;
+
+          &:not(:last-child){
+            margin-right:40px ;
+          }
+        }
+      }
+
+    }
+  }
+#carouselExampleIndicatorsMini{
+  display: none;
+}
+}

@@ -1,0 +1,31 @@
+.article{
+  @media (max-width: $br-point-netbook-l) and (min-width: $br-point-tab){
+    padding: 250px 0 60px;;
+  }
+  @media (max-width: $br-point-mob-l) {
+
+    padding: 180px 15px 60px;
+    &__intro {
+
+      &-img {
+        min-height: 300px;
+      }
+
+      h2{
+        font-size: $font-md-mob;
+      }
+    }
+
+    &__body {
+      h1{
+        font-size: $font-lg-mob;
+      }
+
+      h3{
+        font-size: $font-sm;
+      }
+    }
+
+    }
+}
+

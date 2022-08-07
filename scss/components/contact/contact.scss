@@ -1,0 +1,133 @@
+.contact{
+  padding: 180px 0 60px;
+
+  &__details{
+    margin-right: 60px;
+  }
+  &__address,
+  &__email{
+    color: $dark-blue-color;
+    font-size: calc(#{$font-md} + 2px);
+    line-height: $font-l;
+    padding-bottom: 30px;
+    border-bottom: $border-divider;
+  }
+
+  &__phone{
+    margin-bottom: 15px;
+    a{
+      color: $dark-blue-color;
+      font-size: calc(#{$font-md} + 2px);
+      line-height: $font-l;
+    }
+  }
+
+  &__social{
+    margin: 30px 0;
+
+    a {
+      display: block;
+      gap: 10px;
+      p{
+        max-width: 105px;
+        font-size: calc(#{$font-xs} - 2px);
+        line-height: $font-sm;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: $font-bold;
+      }
+
+
+      svg {
+        width: 38px;
+        height: 38px;
+
+        path {
+          fill: $mobile-menu-item-color;
+        }
+      }
+
+      &:hover {
+        color: $accent-color;
+        transition: .3s;
+        svg {
+          path {
+            fill: $accent-color;
+            color: $accent-color;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+
+  &__form{
+    width: 100%;
+    background-color:#F5F5FA;
+    border-radius:#{$default-border-radius};
+    padding:30px;
+
+    &-title{
+      font-size: $font-l;
+      font-weight: $font-bold;
+      @extend %gradient-text-dark;
+    }
+    form{
+      label{
+        width: 100%;
+        color: $grey-color;
+        input{
+          width: 100%;
+          padding: 15px;
+          border: none;
+          border-radius: 8px;
+          font-size: $font-sm;
+          margin-bottom: 15px;
+
+          &:focus-visible{
+            border: 1px solid $mobile-menu-item-color;
+          }
+        }
+      }
+
+      textarea{
+        min-height: 130px;
+        width: 100%;
+        resize: none;
+        border: none;
+        border-radius: 8px;
+        padding: 15px;
+        color: $grey-color;
+        font-size: $font-sm;
+        margin-bottom: 30px;
+}
+      legend{
+        font-size: $font-xs;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $grey-color;
+        margin-bottom: 15px;
+      }
+
+    }
+    &-btn{
+      width: 100%;
+      margin: 15px auto 30px;
+      padding: 18px 0;
+      color: $white-color;
+      font-weight: $font-bold;
+
+      &:hover,
+      &:focus{
+        background-color: #0085FF;
+        color: $white-color;
+      }
+
+      &:active{
+        background-color: #006CCF;
+        color: $white-color;
+      }
+    }
+  }
+}

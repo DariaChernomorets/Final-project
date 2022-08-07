@@ -1,0 +1,18 @@
+.publications__page{
+
+  @media (max-width:$br-point-netbook-l){
+    padding-top: 280px;
+  }
+  @media (max-width: $br-point-netbook) {
+    &-item{
+      width: calc(50% - 20px);
+    }
+  }
+  @media (max-width:  $br-point-tab) {
+
+    padding-top: 180px;
+    &-item{
+      width: 100%;
+    }
+  }
+}

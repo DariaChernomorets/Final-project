@@ -1,0 +1,39 @@
+.team {
+
+  @media (min-width: $br-point-comp-xl) {
+    .carousel-item-img{
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: $br-point-netbook) {
+
+    .carousel-item {
+
+      &-card {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      &-img {
+        min-height: 500px;
+        width: 100%;
+      }
+      &-text{
+        margin: 30px;
+      }
+
+      &-subtitle{
+        margin: 0;
+      }
+    }
+  }
+  @media (max-width: $br-point-mob-l){
+    .carousel-item{
+      &-title{
+        font-size: $font-lg-mob;
+      }
+    }
+  }
+
+}

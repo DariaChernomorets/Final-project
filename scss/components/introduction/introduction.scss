@@ -1,0 +1,30 @@
+main{
+  .introduction{
+          padding-top: 120px;
+
+    &__subtitle{
+      display: none;
+    }
+
+    &__title{
+      margin: 60px 0;
+    }
+
+    &__link{
+      a{
+        &:hover{
+          color: $accent-color;
+          transition: .3s;
+        }
+      }
+    }
+    &__item{
+
+    &:nth-child(3),
+    &:nth-child(6)
+    {
+      padding: 0 0 0 30px;
+    }
+    }
+  }
+}

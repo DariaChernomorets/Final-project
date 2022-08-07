@@ -1,0 +1,44 @@
+.banner{
+  background-image: url("../assets/symbol.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 35px;
+
+  &__title {
+    color: $white-color;
+    font-size: $font-xxl;
+    font-weight: $font-bold;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 42px;
+    height: 42px;
+    border: 1px solid $white-color;
+    border-radius: 50%;
+      &:hover{
+        border-color: $accent-color;
+        transition: .3s;
+        svg{
+          fill: $accent-color;
+        }
+      }
+    svg{
+      width: 25px;
+      height:20px;
+      fill: $white-color;
+      margin-top: 11px;
+
+
+    }
+  }
+}

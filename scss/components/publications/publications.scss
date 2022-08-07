@@ -1,0 +1,97 @@
+.publications{
+    padding: 30px 0;
+    background-color: $bg-light;
+
+
+  .row{
+        --bs-gutter-x:0;
+        gap: 30px;
+    justify-content: space-between;
+      }
+
+      &__subtitle {
+        margin: 30px 0 10px 0;
+
+        a {
+          font-size: $font-xs;
+          font-weight: $font-bold;
+          color: $mobile-menu-item-color;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+
+        &__title{
+          font-size: $font-xxl;
+          font-weight: $font-bold;
+          margin-bottom: $mb-default;
+          @extend %gradient-text-dark;
+        }
+
+  &__item{
+    border-radius: $default-border-radius;
+    background-color: $white-color;
+    overflow: hidden;
+    width: calc(33% - 30px);
+
+    &-img1,
+    &-img2,
+    &-img3,
+    &-img4,
+    &-img5{
+      min-height: 200px;
+      width: 100%;
+      @extend %bg-image;
+    }
+    &-img1{
+      background-image:url("../assets/publication1.png") ;
+    }
+    &-img2{
+      background-image:url("../assets/publication2.png") ;
+    }
+    &-img3{
+      background-image:url("../assets/publication3.png") ;
+    }
+    &-img4{
+      background-image:url("../assets/publication4.svg") ;
+    }
+    &-img5{
+      background-image:url("../assets/publication5.png") ;
+    }
+    &-title{
+      color: $mobile-menu-item-color;
+      font-size: $font-sm;
+      font-weight: $font-bold;
+      line-height: $font-md;
+      margin: 30px 0 15px 30px;
+
+      a{
+
+        &:hover{
+          color: $accent-color;
+          transition: .3s;
+        }
+      }
+    }
+
+    &-date{
+      color: $grey-color;
+      font-size: 12px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 30px;
+      padding-bottom: 15px;
+      border-bottom: $border-divider;
+    }
+
+    &-text{
+      margin: 0 30px;
+      font-size: $font-sm;
+      padding-bottom: 30px;
+    }
+  }
+}

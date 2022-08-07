@@ -1,0 +1,82 @@
+.team__list{
+  padding-top: 180px;
+
+  h1{
+    font-size: $font-xxl;
+    font-weight: $font-bold;
+    @extend %gradient-text-dark;
+    margin: 0 110px 60px 110px;
+
+  }
+
+  &-item {
+    margin-bottom: 60px;
+    &-img {
+      min-height: 400px;
+      @extend %bg-image;
+      margin-bottom: 15px;
+    }
+
+    .person1 {
+      background-image: url("../assets/team-lead.svg");
+    }
+
+    .person2 {
+      background-image: url("../assets/team2.png");
+    }
+
+    .person3 {
+      background-image: url("../assets/team3.png");
+    }
+
+    .person4 {
+      background-image: url("../assets/team4.png");
+    }
+
+    .person5 {
+      background-image: url("../assets/team5.png");
+    }
+
+    .person6 {
+      background-image: url("../assets/team6.png");
+    }
+
+    &-link {
+      display: block;
+      h3{
+        font-size: $font-sm;
+        font-weight: $font-bold;
+        color: $dark-blue-color;
+      }
+        &-svg{
+        width: 32px;
+        height: 32px;
+        background-color: $mobile-menu-item-bg-color;
+        border-radius: 50%;
+        svg{
+          width: 15px;
+          height: 15px;
+          color: $mobile-menu-item-color;
+
+        }
+      }
+
+      &:hover {
+        h3 {
+          color: $accent-color;
+          transition: .3s;
+        }
+        path{
+          fill:$accent-color;
+          background-color: $mobile-menu-item-active-bg-color;
+          transition: .3s;
+        }
+      }
+    }
+  }
+      p {
+        font-size: $font-xs;
+        color: $grey-color;
+      }
+}
+

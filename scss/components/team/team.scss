@@ -1,0 +1,65 @@
+.team {
+  padding: 100px 0 30px 0;
+
+  .carousel {
+
+    &-item {
+
+      background-color: $bg-light;
+      border-radius: $default-border-radius;
+      overflow: hidden;
+
+      &-img {
+        background-image: url("../assets/team-lead.svg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        min-width: 400px;
+
+      }
+
+      h6,
+      p {
+        color: $grey-color;
+      }
+
+      h6 {
+        font-size: $font-sm;
+        font-weight: $font-bold;
+      }
+
+      p {
+        font-size: $font-xs;
+        margin-bottom: $mb-default;
+      }
+
+      &-card {
+        gap: 30px;
+      }
+        &-subtitle {
+          margin: 30px 0 5px 0;
+
+          a {
+            font-size: $font-xs;
+            font-weight: $font-bold;
+            color: $mobile-menu-item-color;
+            text-transform: uppercase;
+
+            &:hover {
+              color: $accent-color;
+            }
+          }
+        }
+
+        &-title {
+          font-size: $font-xxl;
+          font-weight: $font-bold;
+          margin-bottom: 30px;
+          @extend %gradient-text-dark;
+        }
+      }
+    }
+  }
+
+

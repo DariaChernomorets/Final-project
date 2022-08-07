@@ -1,0 +1,137 @@
+.header__light {
+  position: absolute;
+  padding-top: 50px;
+  width: 100%;
+  z-index: 1;
+
+  &-page{
+    span{
+      color: $accent-color;
+      font-size: $font-xxl;
+      font-weight: $font-bold;
+      margin: 0 4px;
+    }
+
+    p{
+      color: $dark-blue-color;
+      font-size: calc(#{$font-xxl} - 2px);
+    }
+  }
+
+  &-content-wrapper{
+    position: relative;
+  }
+  &-top {
+    font-size: $font-sm;
+
+    .container-lg {
+      position: relative;
+    }
+
+    &-content {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: -16px;
+
+      & > div:not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          background-color: $grey-color;
+          border-radius: 50%;
+          margin-left: 3px;
+        }
+      }
+    }
+    &-lang {
+
+      input[name="lang"] {
+        display: none;
+      }
+
+      input[name="lang"]:checked + span {
+        background-color: $accent-color;
+        color: $white-color;
+      }
+
+      label span {
+        cursor: pointer;
+        font-weight: $font-bold;
+        color: $grey-color;
+        padding: 5px 7px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+    }
+
+    &-address,
+    &-phone {
+      a {
+        color: $grey-color;
+        font-size: $font-sm;
+        font-weight: $font-normal;
+        text-decoration: none;
+      }
+    }
+
+    &-phone a {
+      font-weight: $font-bold;
+    }
+    &-social{
+      svg{
+        path{
+          fill: $grey-color;
+
+          &:hover{
+            fill: $accent-color;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+
+
+  &-navbar{
+    width: 100%;
+
+    &-logo {
+      margin-top: -20px;
+    }
+  }
+  .navbar {
+
+
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding-top: 20px;
+    }
+
+
+    .nav-link {
+      font-weight: $font-bold;
+      padding-bottom: 3px;
+      color: $mobile-menu-item-color;
+
+      &.active {
+        border-bottom: 2px solid;
+        color: $accent-color;
+      }
+&:hover{
+  color: $accent-color;
+}
+    }
+  }
+
+}
+

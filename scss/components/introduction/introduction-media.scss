@@ -1,0 +1,18 @@
+main {
+  .introduction {
+    @media (max-width: $br-point-netbook-l) {
+
+      padding-top: 210px;
+
+      &__item {
+
+        &:nth-child(3),
+        &:nth-child(6) {
+          padding: 0 30px;
+        }
+
+      }
+    }
+  }
+}
+  

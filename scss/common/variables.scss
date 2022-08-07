@@ -1,0 +1,53 @@
+$main-font: 'Montserrat', sans-serif;
+$font-xxl:38px;
+$font-l:30px;
+$font-lg: 24px;
+$font-md: 19px;
+$font-sm: 16px;
+$font-xs:14px;
+$font-lg-mob:30px;
+$font-md-mob:20px;
+
+$font-normal: 400;
+$font-bold: 700;
+
+$mobile-menu-item-color: #24A3FF;
+$mobile-menu-item-bg-color: #F5F5FA;
+$mobile-menu-item-active-bg-color: #E6E6F0;
+
+$main-gradient:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$white-color: #fff;
+$grey-color:#B3B3BA;
+$dark-blue-color:#323264;
+
+$bg-light:#F5F5FA;
+$accent-color: #F0145A;
+$default-border-radius:12px;
+$gradient-shadow-height:10px;
+$border-divider:4px solid #E6E6F0;
+
+$mb-default:30px;
+
+$br-point-comp-xl:1600px;
+$br-point-comp-l:1440px;
+$br-point-comp:1280px;
+$br-point-netbook-l:1024px;
+$br-point-netbook:992px;
+$br-point-tab:767px;
+$br-point-mob-l:576px;
+$br-point-mob:480px;
+$br-point-mini:320px;
+
+.nav-link {
+  --bs-nav-link-color: #{$white-color};
+  --bs-navbar-active-color: #{$accent-color};
+  --bs-navbar-nav-link-padding-x: 0;
+  --bs-nav-link-hover-color: #{$accent-color};
+  --bs-nav-link-padding-y: 0;
+}
+.bg-gradient {
+  --bs-gradient: #{$main-gradient}
+}
+.row{
+  --bs-gutter-x: 60px;
+}

@@ -1,0 +1,138 @@
+.header__light {
+  @media (min-width: $br-point-netbook) {
+    &-top-content {
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: $br-point-netbook) and (min-width: 768px) {
+
+    .navbar .container-lg {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+
+  }
+
+  @media (max-width: $br-point-netbook) {
+    &-top-content {
+      position: static;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  @media (max-width: $br-point-tab) {
+    &-page{
+      span{
+        font-size: $font-lg;
+
+      }
+
+      p{
+
+        font-size: $font-md-mob;
+      }
+    }
+
+    & {
+      padding-top: 0;
+    }
+
+    .navbar {
+      padding: 15px 0 0 0;
+
+      &-brand {
+        margin: 0;
+      }
+
+      &-toggler {
+        $icon-size: 35px;
+        border: none;
+        padding: 5px;
+
+        &:hover {
+          background-color: #e6e6f02b;
+          transition: .3s;
+        }
+
+        &:focus {
+          box-shadow: none;
+          background-color: #e6e6f02b;
+        }
+
+
+        svg {
+          fill: $grey-color;
+          width: $icon-size;
+          height: $icon-size;
+        }
+
+      }
+
+      .navbar-collapse {
+        background-color: $white-color;
+        padding: 20px;
+        border-radius: $default-border-radius;
+        margin-top: 20px;
+
+
+
+        .nav-link {
+          padding: 7px 0;
+          text-align: center;
+          border-radius: $default-border-radius;
+          background-color: $mobile-menu-item-bg-color;
+          color: $mobile-menu-item-color;
+          font-weight: $font-bold;
+          font-size: $font-lg;
+
+          &.active {
+            border: none;
+            color: $accent-color;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: $mobile-menu-item-active-bg-color;
+            transition: .3s;
+          }
+        }
+      }
+
+
+    }
+
+
+    &-top {
+      background-color: #F5F5FA;
+
+      .container-lg {
+        padding: 10px 15px;
+      }
+
+      &-content {
+        margin: 0;
+        justify-content: space-between;
+
+        & > div:not(:last-child):after {
+          content: unset;
+        }
+      }
+
+      &-address, &-social {
+        display: none;
+      }
+
+      &-phone {
+        margin: 0 !important;
+      }
+    }
+
+  }
+
+
+}
